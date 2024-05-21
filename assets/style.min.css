@@ -1,12 +1,43 @@
+/* CSS GENERAL */
 body {
 	max-width: 1920px;
 	margin: auto;
 }
 
 * {
-	font-family: 'Inter';
+	font-family: 'Inter', sans-serif;
 	font-style: normal;
 }
+
+.quote {
+	width: 70%;
+	margin: auto;
+	padding-block: 3em;
+}
+
+.quote-text {
+	font-style: italic;
+	font-weight: 300;
+	font-size: 40px;
+}
+
+.quote-author {
+	font-weight: 800;
+	font-size: 22px;
+}
+
+.quote-text, .quote-author, #about-me .about-me-introduction {
+	font-family: 'Spectral', serif;
+}
+
+.auto-size-slide, .picture img {
+	width: 100%;
+	height: auto;
+}
+
+/* CSS HEADER */
+
+/* .top-header */
 
 .top-header {
 	background-color: white;
@@ -39,12 +70,9 @@ nav a {
 	text-decoration: none;
 	color: #000
 }
-.social-link img {
-	width: 20px;
-	height: 20px;
-}
 
 
+/* CSS #about */
 #about {
 	display: flex;
 	background-color: #F6D2B8;
@@ -73,13 +101,13 @@ nav a {
 	flex: 2
 }
 
-.about-me_title {
+.about-me-title {
 	margin-top: 1em;
 	margin-bottom: 60px;
 	font-size: 30px;
 }
 
-#about-me .about-me_introduction {
+#about-me .about-me-introduction {
 	font-family: 'Spectral';
 	font-size: 16px;
 	font-weight: 800;
@@ -92,7 +120,7 @@ nav a {
 	font-size: 14px;
 }
 
-
+/* CSS #gallery */
 .title {
 	text-align: center;
 	padding-block: 2em;
@@ -146,27 +174,7 @@ nav a {
 	font-size: 24px;
 }
 
-.quote {
-	font-family: 'Spectral';
-	font-style: italic;
-	width: 70%;
-	margin: auto;
-	padding-block: 3em;
-}
-
-.quote_text {
-	font-family: 'Spectral';
-	font-style: italic;
-	font-weight: 300;
-	font-size: 40px;
-
-}
-
-.quote__author {
-	font-family: 'Spectral';
-	font-weight: 800;
-	font-size: 22px;
-}
+/* CSS #services */
 #services {
 	margin: auto;
 	background-color: #A8D5D8 ;
@@ -200,6 +208,8 @@ nav a {
 	justify-content: space-between;
 	z-index: 1;
 }
+
+/* CSS #contact */
 #contact {
 	margin: auto;
 	background-color: #D8D3A8 ;
@@ -254,16 +264,7 @@ input[type="submit"] {
 	padding: .5em 1em
 }
 
-.auto_size {
-	width: 100%;
-	height: auto;
-	}
-
-.picture img {
-	width: 100%;
-	height: auto;
-}
-
+/* CSS FOOTER */
 footer {
 	display: flex;
 	flex-direction: row;
@@ -289,16 +290,16 @@ footer li {
 	#about, #contact .container {
 		align-items: center;
 	}
-	.about-me_title {
+	.about-me-title {
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
-	#about-me .about-me_introduction, #about-me p {
+	#about-me .about-me-introduction, #about-me p {
 		width: 100%;
 	}
 }
 @media all and (max-width: 1000px) {
-	#about{
+	#about {
 		flex-direction: column;
 
 	}
@@ -314,7 +315,7 @@ footer li {
 		left: 0;
 		z-index: -1;
 	}
-	.about-me_title, h1{
+	.about-me-title, h1 {
 		text-align: center;
 		margin-top: 1em;
 	}
@@ -327,11 +328,11 @@ footer li {
 		height: auto;
 		margin: 2em 0
 	}
-	.service_description{
+	.service-description {
 		margin-bottom: 1em;
 	}
 
-	#services .container::before{
+	#services .container::before {
 		width: 30%;
 		height: 100%;
 		bottom: 0;
